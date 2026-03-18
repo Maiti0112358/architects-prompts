@@ -20,6 +20,8 @@ Analyze the GitHub repository [REPO_URL] and generate the context section for th
 - Business context: Explain the business goals and objectives that the architecture supports.
 - Operational context: Describe the operational environment in which the software or service will operate.
 - Technical context: Outline the technical environment, including dependencies on other systems and technologies.
+Do not include infrastructure or deployment details.
+Do not include technology stack or dependencies.
 ```
 
 # Prompt 3: Architecture Overview
@@ -104,15 +106,15 @@ Analyze the GitHub repository [REPO_URL] and generate the dependencies and integ
 - Generate a draw.io mermaid diagram
 ```
 
-# Prompt 12: Dependencies and Integrations
+# Prompt 13: Observability and Monitoring
 ```
-Analyze the GitHub repository [REPO_URL] and generate the dependencies and integrations section for the architecture description. Include:
-- External dependencies: List external systems and services the architecture depends on.
-- Integration points: Describe how the architecture integrates with other systems.
-- Generate a draw.io mermaid diagram
+Analyze the GitHub repository [REPO_URL] and generate the observability and monitoring section for the architecture description. Include:
+- Observabiliy: List all the systems that are related to logging, and observability of the system.
+- Monitoring: Describe how the architecture implements monitoring of the systems.
+- Generate a draw.io format diagram
 ```
 
-# Optional: Prompt 13: Evolution and Roadmap
+# Optional: Prompt 14: Evolution and Roadmap
 ```
 Analyze the GitHub repository [REPO_URL] and generate the evolution and roadmap section for the architecture description. Include:
 - Future enhancements: Outline planned future enhancements and their impact on the architecture.
